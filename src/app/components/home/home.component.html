@@ -1,0 +1,8 @@
+<main class="container">
+  <div class="card-wrapper">
+    <weather *ngFor="let city of searchResult" [weatherDetail]="city.searchResult"></weather>
+    <div *ngFor="let city of searchResult | async">
+      {{city}}
+    </div>
+  </div>
+</main>
